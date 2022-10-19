@@ -1,16 +1,16 @@
 import { useState } from "react";
 
-const TodoList = ({ todos, handleDelete }) => {
-  const [line, setLine] = useState(true);
+const TodoList = ({ todos, handleDelete, complateTodo }) => {
+
   return (
     <ul className="allTodos">
-      {todos.map((t) => (
+      {todos.map((t, index) => (
         <li className="singleTodo">
           <div
-            className={line ? "inlist" : "inlist-line"}
-            onClick={() => setLine(!line)}
+            key={index}
+            className={t.isComplete ? "inlist" : "inlist-line"}
           >
-            <span className="todoText" key={t.id}>
+            <span className="todoText" onClick={() => complateTodo(t.id)} key={t.id}>
               {t.todo}
             </span>
             <span className="todoDate">{t.date}</span>

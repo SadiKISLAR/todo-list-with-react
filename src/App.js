@@ -23,6 +23,16 @@ function App() {
     const delTodo = todos.filter((to) => to.id !== id);
     setTodos([...delTodo]);
   };
+
+    const complateTodo = id => {
+    let updatedTodos = todos.map(todo => {
+      if (todo.id === id) {
+        todo.isComplete = !todo.isComplete
+      }
+      return todo
+    })
+    setTodo(updatedTodos)
+  };
   return (
     <div className="App">
       <div className="container">
@@ -39,8 +49,8 @@ function App() {
               setTodo={setTodo}
               setDate={setDate}
             />
-            <TodoList todos={todos} handleDelete={handleDelete} />
-          </div>
+            <TodoList todos={todos} complateTodo={complateTodo} handleDelete={handleDelete} />
+            </div>
         )}
       </div>
     </div>
