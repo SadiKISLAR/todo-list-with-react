@@ -108,6 +108,5 @@ color: white;
   align-content: center;
   justify-content: center;
   flex: 1;
-  color: black;
-
+text-decoration: line-through black;
 }
