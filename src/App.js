@@ -44,7 +44,7 @@ function App() {
         <button className="btn-close" onClick={handleClose}>
           {close ? "close" : "show"}
         </button>
-        {close && (
+        {close ? (
           <div>
             <TodoForm
               handleSubmit={handleSubmit}
@@ -54,11 +54,11 @@ function App() {
               setDate={setDate}
             />
             
-            <TodoList todos={todos} complateTodo={complateTodo} handleDelete={handleDelete} />
+            <TodoList todos={todos} complateTodo={complateTodo} handleDelete={handleDelete}  />
           </div>
-        )}
+        ) :
 
-        {show && (
+         (
           <div> No task to Show</div>
         )}
       </div>
