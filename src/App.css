@@ -77,14 +77,7 @@ h1{
   flex: 1;
 }
 
-.inlist {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  flex: 1;
-  color: black;
-}
+
 .todoDate {
   font-size: 12px;
 }
@@ -116,6 +109,16 @@ h1{
   align-content: center;
   justify-content: center;
   flex: 1;
-text-decoration: line-through black;
+  text-decoration: line-through black;
+  color: black;
+}
+
+.inlist {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex: 1;
+  color: black;
 }
 
