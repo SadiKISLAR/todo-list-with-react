@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import TodoForm from "./components/TodoForm";
-import TodoList from "./components/TodoList";
+import TodoList from "./components/Todolist";
 function App() {
   const [close, setClose] = useState(true);
   const [todo, setTodo] = useState("");
@@ -23,6 +23,8 @@ function App() {
     const delTodo = todos.filter((to) => to.id !== id);
     setTodos([...delTodo]);
   };
+
+  {/* edited */}
   const complateTodo = id => {
     let updatedTodos = todos.map(todo => {
       if (todo.id === id) {
@@ -32,7 +34,8 @@ function App() {
     })
     setTodo(updatedTodos)
   };
-return (
+
+  return (
     <div className="App">
       <div className="container">
         <h1>Todo List App</h1>

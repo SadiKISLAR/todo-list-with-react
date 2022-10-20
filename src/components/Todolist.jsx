@@ -1,6 +1,9 @@
 import { useState } from "react";
 
 const TodoList = ({ todos, handleDelete, complateTodo }) => {
+  {/* edited */
+    /* buradaki sizin yazdığınız usestati kullanmıyoruz */ 
+  }
 
   return (
     <ul className="allTodos">
@@ -9,7 +12,7 @@ const TodoList = ({ todos, handleDelete, complateTodo }) => {
           {/* edited */}
           <div
             key={index}
-            className={t.isComplete ? "inlist" : "inlist-line"}
+            className={t.isComplete ? "inlist-line" : "inlist" }
           >
             {/* edited */}
             <span className="todoText" onClick={() => complateTodo(t.id)} key={t.id}>
