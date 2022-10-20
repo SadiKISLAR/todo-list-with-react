@@ -3,7 +3,7 @@ min-height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #282c34;
+background-color: wheat;
 color: white;
 }
 
@@ -15,6 +15,10 @@ color: white;
   padding: 20px;
   font-size: 20px;
   color: white;
+  background-color: purple;
+}
+h1{
+  color: black;
 }
 
 
@@ -25,27 +29,29 @@ color: white;
   align-items: center;
   width: 450px;
   gap: 10px;
+  
 }
 
 .input1 {
   width: 80%;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 5px;
   border: none;
+  text-align: left;
 }
 .input2 {
-  width: 30%;
+  width: 80%;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 5px;
   border: none;
 }
 
 .btn-go {
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 5px;
   border: none;
-  margin: 0 5px;
-  width: 25%;
+  margin: 10px 5px;
+  width: 84%;
   background-color: blue;
   font-size: 20px;
   font-weight: 600;
@@ -55,15 +61,17 @@ color: white;
   list-style: none;
   margin: 0;
   padding: 0;
+  
 }
 
 .singleTodo{
-  border-radius: 50px;
-  margin: 10px 0;
-  background-color: #5dadf8;
+  border-radius: 20px;
+  margin: 10px ;
+  background-color: white;
   padding: 10px 20px;
   display: flex;
-  width: 450px;
+  width: 80%;
+
 }
 .todoText {
   flex: 1;
@@ -110,3 +118,4 @@ color: white;
   flex: 1;
 text-decoration: line-through black;
 }
+

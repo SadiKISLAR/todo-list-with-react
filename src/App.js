@@ -30,7 +30,7 @@ function App() {
       if (todo.id === id) {
         todo.isComplete = !todo.isComplete
       }
-      return 
+       
     })
     setTodo([updatedTodos])
   };
@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>Todo List App</h1>
+        <h1>Task Tracker</h1>
         <button className="btn-close" onClick={handleClose}>
           {close ? "close" : "show"}
         </button>
