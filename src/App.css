@@ -16,11 +16,17 @@ color: white;
   font-size: 20px;
   color: white;
   background-color: purple;
+  min-height: 550px;
+  min-width: 450px;
 }
 h1{
   color: black;
 }
-
+label{
+  display: block;
+  text-align: left;
+  width: 85%;
+}
 
 .todoForm {
   display: flex;
