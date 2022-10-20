@@ -4,6 +4,7 @@ import TodoForm from "./components/TodoForm";
 import TodoList from "./components/Todolist";
 function App() {
   const [close, setClose] = useState(true);
+  const [show, setShow] = useState(true);
   const [todo, setTodo] = useState("");
   const [todos, setTodos] = useState([]);
   const [date, setDate] = useState("");
@@ -55,6 +56,10 @@ function App() {
             
             <TodoList todos={todos} complateTodo={complateTodo} handleDelete={handleDelete} />
           </div>
+        )}
+
+        {show && (
+          <div> No task to Show</div>
         )}
       </div>
     </div>
