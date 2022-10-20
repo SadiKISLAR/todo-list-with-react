@@ -30,9 +30,9 @@ function App() {
       if (todo.id === id) {
         todo.isComplete = !todo.isComplete
       }
-      return todo
+      return 
     })
-    setTodo(updatedTodos)
+    setTodo([updatedTodos])
   };
 
   return (
