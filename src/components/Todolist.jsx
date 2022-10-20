@@ -6,10 +6,12 @@ const TodoList = ({ todos, handleDelete, complateTodo }) => {
     <ul className="allTodos">
       {todos.map((t, index) => (
         <li className="singleTodo">
+          {/* edited */}
           <div
             key={index}
             className={t.isComplete ? "inlist" : "inlist-line"}
           >
+            {/* edited */}
             <span className="todoText" onClick={() => complateTodo(t.id)} key={t.id}>
               {t.todo}
             </span>
