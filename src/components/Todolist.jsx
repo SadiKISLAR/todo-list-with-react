@@ -1,9 +1,7 @@
 import { useState } from "react";
 
 const TodoList = ({ todos, handleDelete, complateTodo }) => {
-  {/* edited */
-    /* buradaki sizin yazdığınız usestati kullanmıyoruz */ 
-  }
+ 
 
   return (
     <ul className="allTodos">
