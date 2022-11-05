@@ -25,14 +25,14 @@ function App() {
     setTodos([...delTodo]);
   };
 
-  
+
   const complateTodo = id => {
     let updatedTodos = todos.map(todo => {
       if (todo.id === id) {
         todo.isComplete = !todo.isComplete
       }
       return
-       
+
     })
     setTodo([updatedTodos])
   };
@@ -53,14 +53,14 @@ function App() {
               setTodo={setTodo}
               setDate={setDate}
             />
-            
-            <TodoList todos={todos} complateTodo={complateTodo} handleDelete={handleDelete}  />
+
+            <TodoList todos={todos} complateTodo={complateTodo} handleDelete={handleDelete} />
           </div>
         ) :
 
-         (
-          <div> No task to Show</div>
-        )}
+          (
+            <div> No task to Show</div>
+          )}
       </div>
     </div>
   );
